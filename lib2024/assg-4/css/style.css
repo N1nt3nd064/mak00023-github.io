@@ -1,0 +1,195 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+}
+body {
+	background-color: #7cc576;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col-main, .col-footer, img {
+	width:100%;
+}
+
+header {
+	background: #7cc576;
+}
+
+
+.logo {
+	float: left;
+	width:100px;
+	padding: 15px;
+	box-sizing: border-box;
+	background: #7cc576;
+	/*box-sizing border box makes the width adjust according to padding*/
+}
+
+.desktop-nav {
+	float: center;
+	width: calc(100% - 100px);
+	max-width: 600px;
+}
+
+.desktop-nav ul {
+	width:100%;
+}
+
+.desktop-nav li {
+	box-sizing: border-box;
+	width: 100%;
+	float: right;
+	background: #6dcff6;
+}
+
+.main-nav a {
+  background-color: #6dcff6;
+  border: none;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #6dcff6;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.site-content {
+	background-image:url("../images/white_waves.png") ;
+	padding: 15px;
+	width:100%;
+	box-sizing: border-box;
+}
+
+.site-sidebar {
+	background-image: url("../images/white_waves.png");
+	padding: 100px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.img-slide img{
+	width: 100px;
+	height: 100px;
+}
+h3{
+	font-size: 20px;
+}
+
+h2{
+	font-size: 30px;
+}
+
+h4{
+	font-size: 25px;
+}
+section{
+	background-image: url("../images/white_waves.png");
+}
+
+p {
+	text-align: justify;
+}
+
+footer {
+	background: #7cc576;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+header, main, footer {
+
+		max-width: 1280px;
+		margin: 0 auto;
+
+	}
+
+	.desktop-nav {
+		display: block;
+	}
+
+	.site-content {
+		float: left;
+		width: 70%;
+		box-sizing: border-box;
+	}
+
+	.site-sidebar {
+		float: left;
+		width: 30%;
+		box-sizing: border-box;
+	}
+
+	.image-gallery .img-slide {
+		width: 33%;
+		padding: 10px;
+		box-sizing: border-box;
+		float: left;
+	}
+
+	.col-footer {
+		width: 31%;
+		/*total width = 31% + 1%(left margin) + 1% (right margin) */
+		box-sizing: border-box;
+		padding: 10px;
+		float: left;
+	}
+}
+
+.social-media img{
+	width: 100px;
+	height: 100px;
+}
