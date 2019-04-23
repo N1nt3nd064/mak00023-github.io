@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>Final</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="site-header" id="site-header">
+		<h1>My Logo</h1>
+		<nav class="main-nav-container desktop-nav">
+			<ul class="main-nav">
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="schedule.html">Schedule</a>
+				</li>
+				<li>
+					<a href="portfolio.html">Portfolio</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="ham"></div>
+		<div class="mobile-nav-container">
+			<nav class="main-nav-container mobile-nav">
+				<ul class="main-nav">
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="schedule.html">Schedule</a>
+					</li>
+					<li>
+						<a href="portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main clearfix" id="main">
+		<article class="col-main site-content">
+			<section class="main-content">
+				<h2>About</h2>
+				<p>
+					<img src="img/puppy.jpg" alt="Image" class="img-slide">
+					It's hard to beleive how far I came in life since I was a young girl living
+					in Alberta. We started living there just as my sister was born, and lived in
+					a small house before moving to a duplex in a suburb in order to be closer to my
+					elementry school, which I attended from when it first opened, to when I graduated 10 years later. There were a lot of fun memories of my time living there, such as the various
+					visits to West Edmonton Mall, and the time we spent with the friends we met over the years.
+					<br>
+					Then we moved to Ottawa, where I started attending the same high school as my sister until
+					I graduated in Grade 12. Then I decided to attend Algonquin College since it was close to
+					where we're living. It was very intresting to see how the buliding are structured, and how
+					we learn differnt thing in each course that come together based on what we decided to focus our carrer on.
+				</p>
+			</section>
+			<br>
+			<section class="table-section">
+				<h2>Schedule</h2>
+				<table>
+					<thead>
+	 					<tr>
+	 						<th>Time</th>
+	 						<th>Monday</th>
+	 						<th>Tuesday</th>
+	 						<th>Wednsday</th>
+	 						<th>Thursday</th>
+	 						<th>Friday</th>
+	 					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>09:00-11:00</td>
+							<td>Communications I</td>
+							<td>Client Services</td>
+							<td>Special Collections</td>
+							<td>Directed Research Seminar</td>
+							<td>Client Services</td>
+						</tr>
+						<tr>
+							<td>11:00-12:30</td>
+							<td>Reference</td>
+							<td>Internet App</td>
+							<td>Library Software</td>
+							<td>French</td>
+							<td>Reference</td>
+						</tr>
+						<tr>
+							<td>14:00-15:00</td>
+							<td>Aquisitions</td>
+							<td>Gereral Elective</td>
+							<td>Marketing</td>
+							<td>Emerging Library Tech</td>
+							<td>Library Software</td>
+						</tr>
+						<tr>
+							<td>15:30-17:30</td>
+							<td>French</td>
+							<td>French</td>
+							<td>Acquisitions</td>
+							<td>Subject Analysis</td>
+							<td>Internet App</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section class="form-value-transfer clearfix">
+				<h2>Edit Profile</h2>
+				<form id="form" action="submit.php">
+					<p>
+						<label>Name:</label>
+						<input type="text" required name="name" id="name">
+					</p>
+
+					<p>
+					<label>Email:</label>
+					<input type="email" required name="email" id="email">
+					</p>
+
+					<p>
+						<label>Address:</label>
+						<input type="text" required="" name="address" id="address">
+					</p>
+
+					<p>
+						<label>City:</label>
+						<input type="text" required="" name="city" id="city">
+					</p>
+
+					<p>
+						<label>Province</label>
+						<select id="provience" required="" name="province" placeholder="Select Province">
+							<option value="AB">Alberta</option>
+							<option value="BC">Britich Columbia</option>
+							<option value="MB">Manitoba</option>
+							<option value="SK">Saskatchewan</option>
+							<option value="ON">Ontario</option>
+							<option value="PEI">Prince Edward Island</option>
+							<option value="QB">Quebec</option>
+							<option value="NB">New Brunswick</option>
+							<option value="NL">Newfoundland and Labrador</option>
+							<option value="nova-scotia">NS</option>
+							<option value="YK">Yukon</option>
+							<option value="NU">Nunavut</option>
+							<option value="NT">Northwest Territories</option>
+						</select>
+					</p>
+					<p>
+						<label>Postal Code</label>
+						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" id="pc" placeholder="A0A 0A0">
+					</p>
+
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+			<br>
+			<section class="profile-info">
+				<h2>Profile Info</h2>
+				<content class="profile">
+					<i class="fas fa-user"></i><br>
+					<h3>John Doe</h3>
+					<p>JohnDoe@algonquincollege.com</p>
+					<address>
+						<p>1385 Woodroffe Ave, Nepean</p>
+						<p>ON, K2G 1V8</p>
+					</address>
+					<i class="far fa-envelope"></i>
+				</content>
+		</article>
+	</main>
+	<footer class="footer" id="footer">
+		<div class="footer-container">
+			<section class="col-footer quick-link">
+				<h4>Quick Links</h4>
+				<nav>
+					<ul>
+						<li>
+							<a href="home.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="schedule.html">Schedule</a>
+						</li>
+						<li>
+							<a href="portfolio.html">Portfolio</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+
+			<section class="col-footer follow">
+				<h4>Follow Us</h4>
+				<div class="img-slide" id="link">
+					<ul>
+						<li>
+							<img src="img/facebook.png" alt="Facebook">
+						</li>
+						<li>
+							<img src="img/youtube.png" alt="Youtube">
+						</li>
+						<li>
+							<img src="img/twitter.png" alt="Twitter">
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="col-footer address">
+				<h4>Address</h4>
+				<ul>
+					<li>
+						<address class="adress2">
+							<p>1385 Woodroffe Ave, Nepean,</p>
+							<p>ON, K2G1V8</p>
+							<p>Canada</P>
+						</address>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
